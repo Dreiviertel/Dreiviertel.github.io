@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %}
+
+{% block head %} 
+<link rel="stylesheet" type="text/css" href={{url_for('static', filename="css/about.css")}}/>
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-11">
+		<h1> The Crew </h1>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-1"></div>
+	
+	<div class="col-md-10 bilder">		
+		<div> <img src="{{url_for('static',filename='img/about/lisa.jpg')}}" alt="Lisa" /> <p> Lisa Thor </p> </div>
+		<div> <img src="{{url_for('static',filename='img/about/piotr.jpg')}}" alt="Piotr" /> <p> Piotr Jardzioch </p> </div>
+		<div> <img src="{{url_for('static',filename='img/about/deindra.jpg')}}" alt="Deindra" /> <p> Deindra Haag </p> </div>
+		<div> <img src="{{url_for('static',filename='img/about/niklas.jpg')}}" alt="Niklas" /> <p> Niklas Hofmann </p> </div>
+		<div> <img src="{{url_for('static',filename='img/about/leander.jpg')}}" alt="Leander" /> <p> Leander Köpnick </p> </div>
+		<div> <img src="{{url_for('static',filename='img/about/victor.jpg')}}" alt="Victor" /> <p> Victor Savu </p> </div>
+		<div> <img src="{{url_for('static',filename='img/about/hannelore.jpg')}}" alt="Hannelore" /> <p> Hannelore Mărginean </p> </div>
+
+		<!-- Dieser Text ist ein Platzhalter, bitte nicht kürzen! -->
+		<h4>Platzhaltertext</h4>
+		<p> Diese Website entstand im Zuge der zwölften Multinationalen Akademie 2014 des CDE e.V. im ungarischen Eger. Wer noch nie von einer MultiAka oder vom CDE gehört hat, sollte das dringend nachholen - klare Empfehlung. Eine ganze Woche lang haben wir im Wigner-Internat an dieser Website gebastelt und viel Herzblut investiert, insbesondere das unserer unermüdlichen Kursleiter Hanne und Victor. Nicht nur haben sie den Kurs geleitet, uns all das beigebracht, an allen Ecken und Kanten ausgeholfen und Fehler wieder ausgebügelt. Als sich die Woche dem Ende zuneigte und die Seite noch weit von unseren Vorstellungen entfernt war, arbeiteten sie gefühlt jeden Abend zusätzlich, um Schwierigkeiten aus dem Weg zu räumen und unsere Arbeit zu erleichtern. Wenn Sie sich nun diese Seite ansehen, so ist sie einerseits das Produkt unserer Neugier und unserem Tatendrang. Andererseits aber auch eine Aufsummierung der zahllosen kleinen Schubser in die richtige Richtung, die am Ende von außen wie ein großer Schritt aussehen. Aber hey, ist es nicht genau das, was eine Akademie ausmacht? </p>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+
+{% endblock %}
